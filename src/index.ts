@@ -1,5 +1,8 @@
-type type=true;
+type type = true
 
-console.log("Hello, world!");
+console.log("Hello, world!")
 
-export const hello="worldd";
+async function test() {
+  await Promise.resolve(5)
+}
+export const hello = "worldd"

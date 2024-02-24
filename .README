@@ -1,0 +1,12 @@
+0) keep constant node vertion between  team members: node -v > .nvmrc
+1)   install typescript: npm i --save-dev or -D typescript
+1.1) watch ts files and autocompile them to js on save: npm run build -- --watch or -w
+2)  install prettier: npm i --save-dev --save-exact prettier  --save=exact tells npm to  use the exact version
+2.1) run prettier on all files: npm prettier --write .
+3)pre commit hook(adds husky an lint-stage husky(sets up git commit hooks) uses lint-staged to call commands): npx mrm@2 lint-staged
+ "lint-staged": {
+    "*": "prettier --ignore-unknown --write"  //--ignore-unknown  = ignore unknown files
+  }
+  we also have prepare script :     "prepare": "husky install" so we run "npm i" so everything will be installed
+  so on commit -> hasky will be ran and hasky will run -> lint-staged and it will -> run prettier 
+  

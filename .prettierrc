@@ -1,0 +1,11 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": "legacy/*",
+      "options": {
+        "semi": true
+      }
+    }
+  ]
+}

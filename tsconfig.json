@@ -1,9 +1,24 @@
 {
-    "compilerOptions": {
-        //using export import in compiled javascipt
-        "module": "ESNext",
+  "compilerOptions": {
+    //using export import in compiled javascipt
+    "module": "ESNext",
+    //using newer syntax like const& let instead of var
+    "target": "ES2021",
+    //makes easier to work with diffrrent module formats
+    "esModuleInterop": true,
+    //tell typescript not to run type checking on files with .d.ts extention
+    "skipLibCheck": true,
+    //during debuggin let's you visually view typescript files(source files)
+    "sourceMap": true,
+    //distination for compiled js
+    "outDir": "dist",
+    //Enables all the strict settings
+    "strict": true,
+    "strictFunctionTypes": false
 
-        //using newer syntax like const& let instead of var
-        "target":"ES2020"
-    }
+    //tells typescript to create d.ts file for each source file. tells type script user's how js files look
+    //"declaration": true,
+    //when you clicks go to definition for packages, as a consumer it let you to go to see original source code
+    //"declarationMap": true,
+  }
 }
