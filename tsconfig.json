@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        //using export import in compiled javascipt
+        "module": "ESNext",
+
+        //using newer syntax like const& let instead of var
+        "target":"ES2020"
+    }
+}

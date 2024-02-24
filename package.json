@@ -1,5 +1,9 @@
 {
     "author": "Levan Pangani <LevaPangani5>",
+     "type": "module",
+    "scripts": {
+        "build":"tsc"
+    },
     "devDependencies": {
         "typescript": "5.3.3"
     }

@@ -1,0 +1,1 @@
+1# npm run build -- --watch or -w so it will watch our ts files and comple them to js outomatically on save 
